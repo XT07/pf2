@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 body {
     background-color: black;
     margin: 0;
     padding: 0;
+    color: whitesmoke;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+}
+.container {
+    padding: 20px;
+}
+.container h1 {
+    margin: 0;
+    padding: 0;
+    width: 165px;
+    margin: 0 auto;
 }
 .logo {
     border-radius: 50%;
@@ -16,7 +31,7 @@ nav ul {
     padding: 0;
     border-left: 3px solid whitesmoke;
     border-right: 3px solid whitesmoke;
-    width: 250px;
+    width: 350px;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -32,5 +47,16 @@ nav li {
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.foto-coluna {
+    border-radius: 15px;
+    border: 1px solid whitesmoke;
+    width: 300px;
+}
+.coluna {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding-top: 30px;
 }
