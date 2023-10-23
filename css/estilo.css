@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+nav {
+    padding: 50px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+nav li {
+    display: inline-block;
+}
+.nav-box {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.iten-menu {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
