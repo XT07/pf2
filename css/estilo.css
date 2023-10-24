@@ -83,7 +83,7 @@ nav li{
     left: 0;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 4s steps(2) infinite;
 }
 @keyframes slide {
     100% {
@@ -98,7 +98,7 @@ nav li{
     left: 0;
     border-left: 2px solid red;
     animation: typing 2s steps(5) infinite;
-background: black;
+    background: black;
 }
 .dinamico li span{
     position: relative;
