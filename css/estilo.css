@@ -64,7 +64,7 @@ nav li{
 .animacao {
     display: inline-flex;
 }
-.animacao .estatico {
+.animacao .estatico p {
     color: white;
     font-size: 40px;
     font-weight: 400;
