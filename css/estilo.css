@@ -63,7 +63,7 @@ nav li {
 }
 @media (max-width: 990px){
     .logo {
-        width: 800px;
-        height: 800px;
+        width: 500px;
+        height: 500px;
 }
 }
