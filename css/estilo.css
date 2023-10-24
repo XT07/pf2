@@ -62,8 +62,8 @@ nav li {
     padding-top: 30px;
 }
 @media (max-width: 990px){
-    body {
-        background-color: white;
-        color: black;
+    .logo {
+        width: 800px;
+        height: 800px;
 }
 }
