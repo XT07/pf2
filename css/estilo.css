@@ -64,11 +64,33 @@ nav li{
 .animacao {
     display: inline-flex;
 }
-.estatico {
-    color: red;
+.animacao .estatico {
+    color: white;
     font-size: 40px;
     font-weight: 400;
 }
+.animacao .dinamico {
+    margin-left: 15px;
+}
+.dinamico li {
+    color: red;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 400;
+}
+.dinamico li span::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid red;
+    animation: typing 0.5s steps(10) infinite;
+}
+.dinamico li span{
+    position: relative;
+}
+
 @media (max-width: 990px){
     .logo {
         width: 500px;
