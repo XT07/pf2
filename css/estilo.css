@@ -61,6 +61,13 @@ nav li{
     text-align: center;
     padding-top: 30px;
 }
+.animacao {
+    display: inline-flex;
+}
+.animacao .estatico {
+    color: red;
+    font-size: 40px;
+}
 @media (max-width: 990px){
     .logo {
         width: 500px;
