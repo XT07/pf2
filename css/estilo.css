@@ -61,3 +61,9 @@ nav li {
     text-align: center;
     padding-top: 30px;
 }
+@media(Max-width: 320px){
+    body {
+        background-color: white;
+        color: black;
+}
+}
