@@ -166,12 +166,32 @@ nav {
         margin-left: 35%;
     }
 
-    hr {
-        display: none;
-    }
-
     .coluna {
         width: 100%;
         text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .l1 {
+        height: 1px;
+        margin-bottom: 20px;
+        background-color: white;
+        width: 600px;
+    }
+    
+    .l2 {
+        height: 1px;
+        background-color: white;
+        width: 400px;
+    }
+    
+    .lp {
+        height: 1px;
+        background-color: white;
+        width: 500px;
+        margin-left: 26%;
     }
 }
