@@ -36,7 +36,7 @@ navUll {
     margin: 0 auto;
     margin-top: 10px;
 }
-nav li {
+navUl li {
     display: inline-block;
 }
 .nav-box {
