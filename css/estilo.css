@@ -64,9 +64,10 @@ nav li{
 .animacao {
     display: inline-flex;
 }
-.animacao .estatico {
+.estatico {
     color: red;
     font-size: 40px;
+    font-weight: 400;
 }
 @media (max-width: 990px){
     .logo {
