@@ -66,4 +66,7 @@ nav li {
         width: 500px;
         height: 500px;
 }
+    .coluna {
+        width: 50%;
+}
 }
