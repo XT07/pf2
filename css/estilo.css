@@ -71,12 +71,24 @@ nav li{
 }
 .animacao .dinamico {
     margin-left: 15px;
+    line height: 90px;
+    height: 90px;
+    overflow: hidden;
 }
 .dinamico li {
     color: red;
     list-style: none;
     font-size: 40px;
     font-weight: 400;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100% {
+        top: -360px;
+}
 }
 .dinamico li span::after {
     content:"";
@@ -86,11 +98,17 @@ nav li{
     left: 0;
     border-left: 2px solid red;
     animation: typing 0.5s steps(10) infinite;
+background: black;
 }
 .dinamico li span{
     position: relative;
 }
-
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+}
+}
 @media (max-width: 990px){
     .logo {
         width: 500px;
