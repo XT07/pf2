@@ -1,32 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 body {
     background-color: black;
     margin: 0;
     padding: 0;
     color: whitesmoke;
 }
+
 h1 {
     font-family: 'Merriweather', serif;
 }
+
 .container {
     padding: 20px;
 }
+
 .container h1 {
     margin: 0;
     padding: 0;
     width: 165px;
     margin: 0 auto;
 }
+
 .logo {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     border: 2px solid whitesmoke;
 }
+
+.logo:hover {
+    border: 2px solid red;
+}
+
 nav {
     padding: 50px;
 }
+
 .txtMenu {
     list-style: none;
     padding: 0;
@@ -36,87 +47,141 @@ nav {
     margin: 0 auto;
     margin-top: 10px;
 }
+
 .txtMenu li {
     display: inline-block;
 }
+
 .nav-box {
     margin: 0 auto;
     width: 50%;
     text-align: center;
 }
+
 .iten-menu1 {
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .iten-menu2 {
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .iten-menu3 {
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .iten-menu4 {
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .iten-menu1:hover {
     font-size: 21px;
     color: red;
     text-decoration: underline red;
 }
+
 .iten-menu2:hover {
     font-size: 21px;
     color: red;
     text-decoration: underline red;
 }
+
 .iten-menu3:hover {
     font-size: 21px;
     color: red;
     text-decoration: underline red;
 }
+
 .iten-menu4:hover {
     font-size: 21px;
     color: red;
     text-decoration: underline red;
 }
+
 .foto-coluna {
     border-radius: 15px;
     border: 2px solid whitesmoke;
     width: 300px;
 }
+
 .foto-coluna:hover {
     border: 2px solid red;
 }
+
 .coluna {
     float: left;
     width: 33.3%;
     text-align: center;
     padding-top: 30px;
 }
-@media (max-width: 990px){
+
+.l1 {
+    width: 200px;
+}
+
+.l2 {
+    width: 100px;
+}
+
+.lp {
+    width: 200px;
+}
+
+@media (max-width: 990px) {
     .logo {
         width: 500px;
         height: 500px;
-}
+    }
+
     .coluna {
         width: 50%;
-}
-    .foto-coluna{
+    }
+
+    .foto-coluna {
         width: 400px;
-}
+    }
+
     .container p {
         font-size: 35px;
-}
+    }
+
     h1 {
         font-size: 50px;
-}
+    }
+
+    .l1 {
+        width: 200px;
+    }
+
+    .l2 {
+        width: 100px;
+    }
+
+    .lp {
+        width: 200px;
+    }
+
+    .l1 {
+        width: 200px;
+    }
+
+    .l2 {
+        width: 100px;
+    }
+
+    .lp {
+        width: 200px;
+    }
 }
