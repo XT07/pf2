@@ -27,7 +27,7 @@ h1 {
 nav {
     padding: 50px;
 }
-menu-ul {
+menuUlItens {
     list-style: none;
     padding: 0;
     border-left: 3px solid whitesmoke;
@@ -36,7 +36,7 @@ menu-ul {
     margin: 0 auto;
     margin-top: 10px;
 }
-navUl li {
+menuUlItens li{
     display: inline-block;
 }
 .nav-box {
