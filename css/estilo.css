@@ -69,4 +69,7 @@ nav li {
     .coluna {
         width: 50%;
 }
+    .foto-coluna{
+        width: 500px;
+}
 }
