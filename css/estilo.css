@@ -97,7 +97,7 @@ nav li{
     height: 100%;
     left: 0;
     border-left: 2px solid red;
-    animation: typing 0.5s steps(10) infinite;
+    animation: typing 2s steps(5) infinite;
 background: black;
 }
 .dinamico li span{
