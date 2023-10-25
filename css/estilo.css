@@ -206,4 +206,8 @@ nav {
         float: right;
         margin: 10px;
     }
+
+    #menuResp:aclive.#ulResp {
+        display: block;
+    }
 }
