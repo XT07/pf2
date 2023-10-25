@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 body {
-    background-color: black;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
     color: whitesmoke;
@@ -41,8 +41,8 @@ nav {
 .txtMenu {
     list-style: none;
     padding: 0;
-    border-left: 3px solid whitesmoke;
-    border-right: 3px solid whitesmoke;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
     width: 450px;
     margin: 0 auto;
     margin-top: 10px;
@@ -59,28 +59,28 @@ nav {
 }
 
 .iten-menu1 {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
 
 .iten-menu2 {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
 
 .iten-menu3 {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
 
 .iten-menu4 {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
@@ -112,7 +112,7 @@ nav {
 
 .foto-coluna {
     border-radius: 15px;
-    border: 2px solid whitesmoke;
+    border: 2px solid black;
     width: 300px;
 }
 
@@ -155,12 +155,12 @@ nav {
     .logo {
         width: 500px;
         height: 500px;
-        border: 4px solid whitesmoke;
+        border: 4px solid black;
     }
 
     .foto-coluna {
         width: 700px;
-        border: 4px solid whitesmoke;
+        border: 4px solid black;
     }
 
     .container p {
@@ -184,19 +184,19 @@ nav {
     .l1 {
         height: 1px;
         margin-bottom: 20px;
-        background-color: white;
+        background-color: black;
         width: 600px;
     }
     
     .l2 {
         height: 1px;
-        background-color: white;
+        background-color: black;
         width: 400px;
     }
     
     .lp {
         height: 1px;
-        background-color: white;
+        background-color: black;
         width: 500px;
         margin-left: 26%;
     }
