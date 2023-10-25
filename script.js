@@ -1,7 +1,7 @@
 const btnMobile =document.getElementById("btn-mobile");
 
 function toggleMenu() {
-    const ulResp =document.getElementById("ulResp");
+    const menuResp =document.getElementById("menuResp");
     ulResp.classList.toggle("active");
 }
 
