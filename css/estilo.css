@@ -144,6 +144,9 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+#btn-mobile {
+    display: none;
+}
 
 @media (max-width: 990px) {
     .logo {
@@ -193,5 +196,11 @@ nav {
         background-color: white;
         width: 500px;
         margin-left: 26%;
+    }
+    
+    #btn-mobile {
+        display: block;
+        float: right;
+        margin: 10px;
     }
 }
