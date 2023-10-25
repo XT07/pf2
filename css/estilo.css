@@ -207,7 +207,7 @@ nav {
         margin: 10px;
     }
 
-    #menuResp:aclive.#ulResp {
+    #menuResp:aclive #ulResp {
         display: block;
     }
 }
