@@ -152,17 +152,10 @@ nav {
     text-align: center;
 }
 
-header {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-.img-menu {
-    width: 100px;
-}
-input[type="checkbox"]{
+#btn-mobile {
     display: none;
 }
+
 @media (max-width: 990px) {
     .logo {
         width: 500px;
@@ -211,5 +204,38 @@ input[type="checkbox"]{
         background-color: black;
         width: 500px;
         margin-left: 26%;
+    }
+
+    #menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    #menu li {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    #menu a {
+        display: block;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    #nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    #nav.active #menu {
+        display: block;
     }
 }
