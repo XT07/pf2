@@ -21,13 +21,14 @@ h1 {
     padding: 0;
     width: 165px;
     margin: 0 auto;
+    color: black;
 }
 
 .logo {
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    border: 2px solid whitesmoke;
+    border: 2px solid black;
 }
 
 .logo:hover {
