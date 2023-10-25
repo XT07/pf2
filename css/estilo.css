@@ -147,6 +147,9 @@ nav {
 #btn-mobile {
     display: none;
 }
+.menuResp {
+    display: none;
+}
 
 @media (max-width: 990px) {
     .logo {
