@@ -156,6 +156,10 @@ nav {
     display: none;
 }
 
+#header {
+    display: none;
+}
+
 @media (max-width: 990px) {
     .logo {
         width: 500px;
@@ -206,16 +210,37 @@ nav {
         margin-left: 26%;
     }
 
+    #header {
+        display: block;
+        position: fixed;
+        padding: 20px;
+        height: 100%;
+    }
+
+    #checkbox {
+        display: none;
+    }
+
+    #checkbox:checked ~ #menu{
+        display: none;
+    }
+
+    #img-menu {
+        width: 125px;
+        border-radius: 15px;
+        background-color: white;
+    }
+
     #menu {
         list-style: none;
         padding: 0;
         margin: 0;
-        display: none;
     }
 
-    #menu li {
-        display: inline-block;
-        padding-right: 20px;
+    #menu li a {
+        color: black;
+        font-size: 40px;
+        padding: 20px;
     }
 
     #menu a {

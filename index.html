@@ -7,22 +7,13 @@
     <meta name="description" content="Veja os meus projetos e os meus templates" />
     <link rel="short cut icon" href="img/logo.jpg" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <script>
-        const btnMobile = document.getElementById("btn-mobile");
-
-        function toggleMenu() {
-            const nav = document.getElementById("nav");
-            nav.classList.toggle("active");
-        }
-
-        btnMobile.addEventListener("click", toggleMenu);
-    </script>
 </head>
 
 <body>
     <header id="header">
         <nav id="nav">
-            <buttom id="btn-mobile">menu</buttom>
+            <input type="checkbox" id="checkbox" checked></input>
+            <label for="checkbox"><img src="img/menu.png" id="img-menu"></label>
             <ul id="menu">
                 <li><a href=""><b>INICIO</b></a></li>
                 <li><a href="templates.html"><b>TEMPLATES</b></a></li>
