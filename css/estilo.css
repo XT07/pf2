@@ -213,8 +213,8 @@ nav {
     #header {
         display: block;
         position: fixed;
-        padding: 20px;
         height: 100%;
+        width: 400px;
     }
 
     #checkbox {
@@ -225,20 +225,36 @@ nav {
         display: none;
     }
 
+
     #img-menu {
         width: 125px;
         border-radius: 15px;
         background-color: white;
     }
 
+    .box-img {
+        z-index: 900;
+        position: fixed;
+    }
+
     #menu {
         list-style: none;
         padding: 0;
         margin: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        padding-top: 200px;
+        width: 400px;
+    }
+
+    #menu li {
+        margin-bottom: 100px;
     }
 
     #menu li a {
-        color: black;
+        color: white;
         font-size: 40px;
         padding: 20px;
     }
