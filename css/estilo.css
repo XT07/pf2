@@ -12,6 +12,10 @@ h1 {
     font-family: 'Merriweather', serif;
 }
 
+nav {
+    padding: 50px;
+}
+
 .container {
     padding: 20px;
 }
