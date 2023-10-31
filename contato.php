@@ -1,3 +1,22 @@
+<?php
+    if(isset($_POST['enviar'])) {
+        $to = 'luizfelipe01700@gmail.com';
+        $subject = 'Formulário de contato';
+        $message = 'Nome: ' . $_POST['nome'] . "\r\n\r\n";
+        $message .= 'E-mail: ' . $_POST['email'] . "\r\n\r\n";
+        $message .= 'Mensagem: ' . $_POST['descricao'];
+
+        $headers = 'From: ' . $_POST['email'];
+
+        if(mail($to, $subject, $message, $headers)) {
+            echo '<p>E-mail enviado com sucesso!</p>';
+        } else {
+            echo '<p>Erro ao enviar e-mail. Por favor, tente novamente mais tarde.</p>';
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -53,7 +72,21 @@
         </div>
     </nav>
     <div class="container">
-        
+        <form method="POST" action="">
+            <fieldset>
+                <legend>CONTATO VIA E-MAIL</legend>
+                <label for="nome" class="labelForm">Nome:</label><br>
+                <input type="text" class="inputForm" id="nome" name="nome"><br><br>
+
+                <label for="email" class="labelForm">E-mail:</label><br>
+                <input type="email" class="inputForm" id="email" name="email"><br><br>
+
+                <label for="descricao" class="labelForm">Descrição:</label><br>
+                <textarea id="descricao" class="descricaoForm" name="descricao"></textarea><br><br>
+
+                <input type="submit" class="btnEnviar" value="enviar" name="enviar">
+            </fieldset>
+        </form>
     </div>
 </body>
 
