@@ -1,23 +1,3 @@
-<?php
-    function enviarEmail() {
-  if(isset($_POST['enviar'])) {
-        $to = 'luizfelipe01700@gmail.com';
-        $subject = 'Formulário de contato';
-        $message = 'Nome: ' . $_POST['nome'] . "\r\n\r\n";
-        $message .= 'E-mail: ' . $_POST['email'] . "\r\n\r\n";
-        $message .= 'Mensagem: ' . $_POST['descricao'];
-
-        $headers = 'From: ' . $_POST['email'];
-
-        if(mail($to, $subject, $message, $headers)) {
-            echo '<p>E-mail enviado com sucesso!</p>';
-        } else {
-            echo '<p>Erro ao enviar e-mail. Por favor, tente novamente mais tarde.</p>';
-        }
-    }}
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -85,7 +65,10 @@
                 <label for="descricao" class="labelForm">Descrição:</label><br>
                 <textarea id="descricao" class="descricaoForm" name="descricao"></textarea><br><br>
 
-                <input type="submit" class="btnEnviar" value="enviar" name="enviar" onClick="enviarEmail()">
+                <input type="submit" class="btnEnviar" value="enviar" name="enviar" onClick="enviarEmail()"><br><br><br>
+
+                <a href="https://github.com/XT07" target="_blank"><img src="img/github.png" style="width: 100px; margin-right: 10px;"></a>
+                <a href="" target="_blank"><img src="img/linkedin.png" style="width: 100px; margin-left: 10px;"></a>
             </fieldset>
         </form>
     </div>

@@ -18,6 +18,7 @@ nav {
 
 .container {
     padding: 20px;
+    text-align: center;
 }
 
 .container h1 {
@@ -201,11 +202,61 @@ nav {
     font-size: 20px;
 }
 
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.labelForm {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputForm {
+    outline: none;
+    width: 200px;
+    height: 18px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.descricaoForm {
+    resize: vertical;
+    width: 250px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+legend {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mobile-link {
+    display: none;
+}
+
 @media (max-width: 990px) {
     .logo {
         width: 500px;
         height: 500px;
         border: 8px solid black;
+        text-align: center;
     }
 
     .foto-coluna {
@@ -219,7 +270,8 @@ nav {
 
     .container h1 {
         font-size: 70px;
-        margin-left: 35%;
+        width: 65%;
+        margin: 0 auto;
     }
 
     .coluna {
@@ -292,26 +344,27 @@ nav {
     }
 
     #menu li {
-        margin-bottom: 100px;
+        margin-bottom: 15px;
     }
 
     #menu li a {
         color: white;
         font-size: 40px;
         padding: 20px;
-    }
-
-    #menu a {
-        display: block;
-        color: black;
+        height: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
         text-decoration: none;
+        display: block;
     }
 
     #nav {
         margin: 0;
         padding: 0;
+    }
+
+    .nav-box {
+        text-align: center;
+        width: 100%;
     }
 
     #btn-mobile {
@@ -336,7 +389,50 @@ nav {
         justify-content: left;
     }
 
+    form {
+        width: 80%;
+    }
+
+    fieldset {
+        width: 80%;
+        border: 4px solid black;
+    }
+
+    legend {
+        font-size: 50px;
+    }
+
+    .labelForm {
+        font-size: 40px;
+    }
+
+    .inputForm {
+        height: 50px;
+        width: 400px;
+        border-bottom: 4px solid black;
+        font-size: 40px;
+    }
+
+    .descricaoForm {
+        border: 4px solid black;
+        width: 500px;
+        height: 250px;
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .btnEnviar {
+        font-size: 40px;
+        padding: 10px;
+        background: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 15px;
+        border: 4px solid black;
+    }
+
     .mobile-link {
-        display: none;
+        display: inline-block;
+        width: 12%;
+        margin: 0 auto;
     }
 }
