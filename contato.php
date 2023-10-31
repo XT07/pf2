@@ -1,5 +1,6 @@
 <?php
-    if(isset($_POST['enviar'])) {
+    function enviarEmail() {
+  if(isset($_POST['enviar'])) {
         $to = 'luizfelipe01700@gmail.com';
         $subject = 'Formulário de contato';
         $message = 'Nome: ' . $_POST['nome'] . "\r\n\r\n";
@@ -13,7 +14,7 @@
         } else {
             echo '<p>Erro ao enviar e-mail. Por favor, tente novamente mais tarde.</p>';
         }
-    }
+    }}
 ?>
 
 
@@ -84,7 +85,7 @@
                 <label for="descricao" class="labelForm">Descrição:</label><br>
                 <textarea id="descricao" class="descricaoForm" name="descricao"></textarea><br><br>
 
-                <input type="submit" class="btnEnviar" value="enviar" name="enviar">
+                <input type="submit" class="btnEnviar" value="enviar" name="enviar" onClick="enviarEmail()">
             </fieldset>
         </form>
     </div>
