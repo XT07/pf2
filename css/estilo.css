@@ -186,6 +186,17 @@ nav {
     margin-left: 20px;
 }
 
+.container-conteudo {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-conteudo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
 @media (max-width: 990px) {
     .logo {
         width: 500px;
@@ -251,16 +262,17 @@ nav {
         display: none;
     }
 
-
     #img-menu {
         width: 125px;
         border-radius: 15px;
-        background-color: white;
+        background-color: whitesmoke;
     }
 
     .box-img {
         z-index: 900;
         position: fixed;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     #menu {
@@ -304,5 +316,13 @@ nav {
 
     #nav.active #menu {
         display: block;
+    }
+
+    .titulo-img {
+        display: none;
+    }
+
+    .titulo-img-sub {
+        display: none;
     }
 }
