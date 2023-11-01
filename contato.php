@@ -1,34 +1,36 @@
 <?php
-  //Variáveis
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $mensagem = $_POST['descricao'];
-  $data_envio = date('d/m/Y');
-  $hora_envio = date('H:i:s');
+    function enviarEmail() {
+        //Variáveis
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $mensagem = $_POST['descricao'];
+        $data_envio = date('d/m/Y');
+        $hora_envio = date('H:i:s');
 
-  //Compo E-mail
-  $arquivo = "
-    <html>
-      <p><b>Nome: </b>$nome</p>
-      <p><b>E-mail: </b>$email</p>
-      <p><b>Mensagem: </b>$mensagem</p>
-      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
-    </html>
-  ";
-  
-  //Emails para quem será enviado o formulário
-  $destino = "luizfelipe01700#gmail.com";
-  $assunto = "Contato pelo Site";
+        //Compo E-mail
+        $arquivo = "
+            <html>
+            <p><b>Nome: </b>$nome</p>
+            <p><b>E-mail: </b>$email</p>
+            <p><b>Mensagem: </b>$mensagem</p>
+            <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+            </html>
+        ";
+            
+        //Emails para quem será enviado o formulário
+        $destino = "luizfelipe01700#gmail.com";
+        $assunto = "Contato pelo Site";
 
-  //Este sempre deverá existir para garantir a exibição correta dos caracteres
-  $headers  = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-  $headers .= "From: $nome <$email>";
+        //Este sempre deverá existir para garantir a exibição correta dos caracteres
+        $headers  = "MIME-Version: 1.0\n";
+        $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+        $headers .= "From: $nome <$email>";
 
-  //Enviar
-  mail($destino, $assunto, $arquivo, $headers);
-  
-  echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+        //Enviar
+        mail($destino, $assunto, $arquivo, $headers);
+            
+        echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +88,7 @@
         </div>
     </nav>
     <div class="container">
-        <form method="POST" action="php/enviarEmail.php">
+        <form method="POST" action="">
             <fieldset>
                 <legend>CONTATO VIA E-MAIL</legend>
                 <label for="nome" class="labelForm">Nome:</label><br>
@@ -98,7 +100,7 @@
                 <label for="descricao" class="labelForm">Descrição:</label><br><br>
                 <textarea id="descricao" class="descricaoForm" name="descricao"></textarea><br><br>
 
-                <input type="submit" class="btnEnviar" value="enviar" name="enviar"><br><br>
+                <input type="submit" class="btnEnviar" value="enviar" name="enviar" onClick="enviarEmail()"><br><br>
             </fieldset>
         </form>
     </div>
