@@ -31,8 +31,8 @@ nav {
 
 .logo {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    width: 180px;
+    height: 190px;
     border: 4px solid black;
 }
 
@@ -252,6 +252,19 @@ legend {
     display: none;
 }
 
+.btnEnviar {
+    font-size: 20px;
+    padding: 10px;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.legend {
+    font-weight: bold;
+}
+
 @media (max-width: 990px) {
     .logo {
         width: 500px;
@@ -395,35 +408,36 @@ legend {
     }
 
     fieldset {
-        width: 80%;
+        width: 100%;
         border: 4px solid black;
     }
 
     legend {
         font-size: 50px;
+        font-weight: bold;
     }
 
     .labelForm {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .inputForm {
-        height: 50px;
-        width: 400px;
+        height: 70px;
+        width: 500px;
         border-bottom: 4px solid black;
         font-size: 40px;
     }
 
     .descricaoForm {
         border: 4px solid black;
-        width: 500px;
-        height: 250px;
+        width: 600px;
+        height: 350px;
         font-size: 40px;
         padding: 20px;
     }
 
     .btnEnviar {
-        font-size: 40px;
+        font-size: 50px;
         padding: 10px;
         background: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
